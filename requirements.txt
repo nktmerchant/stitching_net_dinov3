@@ -1,0 +1,10 @@
+kagglehub
+polars
+numpy
+torch
+torchvision
+transformers
+huggingface_hub[cli]
+accelerate
+scikit-learn
+tqdm
