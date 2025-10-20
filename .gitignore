@@ -209,3 +209,6 @@ __marimo__/
 
 # Weights and Biases
 wandb/
+
+# Local artifacts
+checkpoints/
