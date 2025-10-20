@@ -1,5 +1,18 @@
 """
 Usage:
+
+1) Generate a text file with `find` or `fdfind`
+    fdfind .+\.$STEM $DATASET_PATH > $DATASET_PATH/file_list.txt
+
+2) Generate the dataframe
+    python -m scripts.file_path_to_df\
+        --txt-read-path $DATASET_PATH/file_list.txt\
+        --column-name $COLUMN_NAME\
+        --df-write-path $DATASET_PATH/metadata.parquet
+
+3) Verify the dataframe
+    python -m scripts.view_df\
+        --df-read-path $DATASET_PATH/metadata.parquet
 """
 
 import argparse
